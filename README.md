@@ -4,7 +4,7 @@ This is a documentation for the Manual to work in any field
 ````
 Mr.Peerapat Sukkasem
 ```` 
-#### Contack
+#### Contact
 
-[![Facebooke](https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png)](https://www.facebook.com/peerapat.suk.1/)
+[![Facebook](https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png)](https://www.facebook.com/peerapat.suk.1/)
 
