@@ -84,6 +84,7 @@
 #ManualIcon{
   margin-top: 10px;
   width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +92,7 @@
 #DirectIcon{
   margin-top: 10px;
   width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
