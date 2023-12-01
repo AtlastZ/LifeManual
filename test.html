@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Type Check</title>
+  <script>
+    // Check the device type
+    function checkDeviceType() {
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      var isTablet = /iPad|iPod/i.test(navigator.userAgent);
+
+      if (isMobile) {
+        document.body.className = 'mobile';
+      } else if (isTablet) {
+        document.body.className = 'tablet';
+      } else {
+        document.body.className = 'desktop';
+      }
+    }
+  </script>
+  <style>
+    /* Define styles for different device types */
+    body.mobile {
+      background-color: lightblue;
+    }
+
+    body.tablet {
+      background-color: rgb(11, 103, 11);
+    }
+
+    body.desktop {
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body onload="checkDeviceType()">
+  <h1>Hello, Device!</h1>
+</body>
+</html>
