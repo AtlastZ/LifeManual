@@ -60,9 +60,8 @@
   max-height: max-content;
 }
 #ProfilePic {
-  min-height: 200px;
   width: 250px;
-  height: 200px;
+  max-height: max-content;
   /* border: 1px solid; */
   display: flex;
   justify-content: center;
