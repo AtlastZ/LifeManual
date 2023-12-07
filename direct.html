@@ -7,6 +7,7 @@
     <script src="assets/JS/main.js"></script>
     <link rel="stylesheet" href="assets/CSS/bg.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="assets/JS/main.js"></script>
     <link rel="icon" type="image/x-icon"
         href="https://oyster.ignimgs.com/mediawiki/apis.ign.com/genshin-impact/7/72/Quelled_Creeper_Icon.png?width=325">
     <title>Direct to Peerapat</title>
@@ -19,18 +20,24 @@
 
 <body>
     <div class="container">
-        <div class="contentbox" id="Profile">
-            <div id="ProfilePic"> ProfilePicture </div>
-            <div class="textbox" id="ProfileText">
+        <div class="contentbox" id="directBox">
+            <!-- <div id="ProfilePic"> ProfilePicture </div> -->
+            <div class="textbox" id="DirectPage">
                 <h1>Direct Mail</h1> <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nostrum, non reiciendis mollitia
-                    consectetur neque laudantium, provident molestias quia, ex excepturi odio vero. Provident veritatis
-                    perferendis deleniti. Dolore, ab accusantium?</p>
-                <br>
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <input type="text" placeholder="&#xf002; Search.."
-                    style="font-family:Arial, FontAwesome;">
+                <form action="assets/PHP/sendDirect.php" method="post" enctype="multipart/form-data"
+                    onsubmit="return validateForm()">
+                    <label for="inputText" style="float: left;">Message :&nbsp</label>
+                    <textarea id="inputText" name="inputText" rows="20" cols="35" required placeholder="Type your message here.. (Required)" ></textarea>
+                    <br>
+                    <label for="fileInput">Upload File :</label>
+                    <input type="file" id="fileInput" name="fileInput" accept=".txt, .pdf, .docx">
+                    <br>
+                    <label for="senderContact"style="float: left;">Your Contact :&nbsp</label>
+                    <textarea id="senderContact" name="senderContact" rows="4" cols="30" required placeholder="Ex. Tel or Email or (Required)"></textarea>
+                    <br>
+                    <div style="width: 100%; text-align: center; margin-top: 10px;"><input type="submit" value="Submit"
+                            id="submit-button"></div>
+                </form>
             </div>
         </div>
     </div>
