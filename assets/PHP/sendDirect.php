@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $inputText = $_POST["inputText"];
 
     // Set the target email address
-    $to = "neolight4136@email.com";
+    $to = "neolight4136@gmail.com";
 
     // Set the subject of the email
     $subject = "New Form Submission!!";
