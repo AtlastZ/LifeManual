@@ -156,3 +156,9 @@
   border-radius: 5px;
   /* height: 400px; */
 }
+#status {
+  text-align: center;
+}
+#status p{
+  text-align: left;
+}
