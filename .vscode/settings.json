@@ -1,0 +1,15 @@
+{
+    "spellright.ignoreFiles": [
+
+        "**/.mdignore",
+        "**/.gitignore",
+        "**/.spellignore"
+    ],
+    "spellright.language": [
+        "en","th"
+    ],
+    "spellright.documentTypes": [
+        "latex",
+        "plaintext"
+    ]
+}
